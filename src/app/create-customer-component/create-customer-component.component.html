@@ -1,0 +1,23 @@
+<br />
+<br />
+<br />
+<div>
+  <label>Employee Name : </label>
+  <input #EmployeeName /><br /><br />
+
+  <label>Employee Email : </label>
+  <input #EmployeeEmail /><br /><br />
+
+  <label>Employee Department : </label>
+  <input #EmployeeDepartment /><br /><br />
+
+  <label>Employee's Manager : </label>
+  <input #EmployeeManager/><br /><br />
+
+  <label>Manager Email : </label>
+  <input #ManagerEmail /><br /><br />
+
+  <br />
+   <button (click)="CreateEmployee(EmployeeName.value,EmployeeEmail.value,EmployeeDepartment.value,EmployeeManager.value,ManagerEmail.value);EmployeeName.value='';EmployeeEmail.value='';EmployeeDepartment.value='';EmployeeManager.value='';ManagerEmail.value=''">
+        Add Employee</button>
+</div>
