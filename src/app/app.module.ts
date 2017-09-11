@@ -20,6 +20,8 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
 //Routing
 import {routing} from './app.routes';
 
+import { APP_BASE_HREF } from '@angular/common';
+
 
 
 @NgModule({
@@ -41,7 +43,7 @@ import {routing} from './app.routes';
     JsonpModule,
     routing
   ],
-  providers: [ItemservicesService],
+  providers:[ItemservicesService,{provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
